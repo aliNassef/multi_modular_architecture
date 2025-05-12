@@ -12,6 +12,9 @@ command:
       flutter:
         sdk: flutter
       dio: ^5.8.0+1
+      get_it: ^8.0.3
+      injectable: ^2.5.0
+      json_annotation: ^4.9.0
 
 
       cupertino_icons: ^1.0.8
@@ -20,7 +23,10 @@ command:
     dev_dependencies:
       flutter_test:
         sdk: flutter
+      json_serializable: ^6.9.5
       flutter_lints: ^5.0.0
+      build_runner: ^2.4.15
+      injectable_generator: ^2.7.0
 
 
 scripts:
