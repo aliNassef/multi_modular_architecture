@@ -18,7 +18,7 @@ class ProdAppSettingsProviderImpl implements AppSettingsProvider {
 class DevAppSettingsProviderImpl implements AppSettingsProvider {
   @override
   String getAppLanguage() {
-    return 'en';
+    return 'ar';
   }
 
   @override
