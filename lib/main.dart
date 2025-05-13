@@ -1,5 +1,4 @@
 import 'package:advanced_course/di/injection.dart';
-import 'package:app_settings/provider/app_settings_provider.dart';
 import 'package:datastore/provider/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
