@@ -30,6 +30,8 @@ environment:
 dependencies:
   app_settings:
     path: E:/Flutter Projects/advanced_course/features/settings/app_settings
+  datastore:
+    path: E:/Flutter Projects/advanced_course/core/datastore
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter

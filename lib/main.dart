@@ -1,11 +1,12 @@
 import 'package:advanced_course/di/injection.dart';
 import 'package:app_settings/provider/app_settings_provider.dart';
+import 'package:datastore/provider/session_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  configureDependencies(Environment.prod);
+  configureDependencies(Environment.dev);
   runApp(const MyApp());
 }
 
@@ -14,13 +15,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appsettings = getit.get<AppSettingsProvider>();
+     final sessionProvider = getit.get<SessionProvider>();
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(body: Center(child: Text(appsettings.getAppTheme()))),
+      home: Scaffold(body: Center(child: Text(sessionProvider.clientId!))),
     );
   }
 }
